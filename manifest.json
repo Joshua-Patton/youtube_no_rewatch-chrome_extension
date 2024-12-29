@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Run script automatically",
+  "description": "Runs a script on www.example.com automatically when user installs the extension",
+  "version": "1.0",
+  "icons": {
+    "16": "images/icon16x16.png"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "scripts/content_script.js"
+      ],
+      "matches": [
+        "https://developer.chrome.com/docs/extensions/*",
+        "https://developer.chrome.com/docs/webstore/*"
+      ]
+    }
+  ]
+}
